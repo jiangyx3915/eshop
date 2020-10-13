@@ -268,7 +268,7 @@ alter table wms_sale_delivery_picking_item comment '销售出库单的拣货条�
 /*==============================================================*/
 create table wms_warehouse_goods_stock
 (
-    id                   bigint not null auto_increments comment '主键',
+    id                   bigint not null auto_increment comment '主键',
     goods_sku_id         bigint not null comment '商品sku ID',
     available_stock_quantity bigint not null comment '可用库存数量',
     locked_stock_quantity bigint not null comment '锁定库存数量',

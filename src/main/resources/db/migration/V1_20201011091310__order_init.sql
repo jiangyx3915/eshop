@@ -3,7 +3,7 @@
 /*==============================================================*/
 
 
-drop table if exists "order";
+drop table if exists `order`;
 
 drop table if exists order_item;
 
@@ -14,7 +14,7 @@ drop table if exists order_return_goods;
 /*==============================================================*/
 /* Table: "order"                                               */
 /*==============================================================*/
-create table "order"
+create table `order`
 (
     id                   bigint not null auto_increment comment '主键',
     user_account_id      bigint comment '用户账号ID',
@@ -37,7 +37,7 @@ create table "order"
     primary key (id)
 );
 
-alter table "order" comment '订单表';
+alter table `order` comment '订单表';
 
 /*==============================================================*/
 /* Table: order_item                                            */
